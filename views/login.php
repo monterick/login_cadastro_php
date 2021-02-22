@@ -30,7 +30,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <form action="/teste/config/controllers/controller.php" method="post" oninput='senha2.setCustomValidity(senha2.value != senha.value ? "Senhas não conferem." : "")'>
+          <form action="../../config/controllers/controller.php" method="post" oninput='senha2.setCustomValidity(senha2.value != senha.value ? "Senhas não conferem." : "")'>
           <label for="nome" >Nome</label>
           <input type="text" id="nome" name="nome" required autofocus>
           <label for="email">Email</label>

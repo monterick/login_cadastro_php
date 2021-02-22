@@ -13,19 +13,11 @@
     
 
     <title>Site</title>
-    <?php
-    session_start();
-    if((!isset($_SESSION['email'])==true)and(!isset($_SESSION['senha'])==true)){
-        unset($_SESSION['email']);
-        unset($_SESSION['senha']);
-        header('location: /teste/index.php');
-    }
-    $logado = $_SESSION['nome'];
-    ?>
+   
   </head>
   <body>
       <header class="header">
-          <form action="../config/controllers/login.php" method="post">
+          <form action="../../config/controllers/login.php" method="post">
           <span><?php echo "Bem Vindo, ". $logado?></span>
           <input type="hidden" name="log" id="log" value="logoff">
           <button    type="submit"  class="btn btn-warning">Sair</button>
